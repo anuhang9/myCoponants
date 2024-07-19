@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>paragraph</title>
+    <style>
+    .notes-data{
+        background-color: rgb(129, 200, 255);
+        border-radius: 3px;
+        display: flex;
+        border: 1px solid rgb(0, 145, 255);
+        padding: 15px 10px;
+        margin: 0 20px 10px 20px;
+    }
+    .notes-data p{
+        padding: 0 15px 0 0;
+        /* min-width: 200px; */
+        /* max-width: 100%; */
+        word-break: break-all;
+    }
+    .notes-data button{
+        border-style: none;
+        background-color: rgb(129, 200, 255);
+        padding: 0 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .notes-data button:nth-child(2){
+        color: green;
+        font-weight: bold;
+    }
+    .notes-data button:nth-child(3){
+        color: red;
+    }
+    </style>
+</head>
+<body>
+    <div class='notes-data'>
+        <p>paragraph</p>
+        <button>✓</button>
+        <button>x</button>
+    </div>
+</body>
+</html>
