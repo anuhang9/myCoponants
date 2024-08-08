@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            box-sizing: border-box;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .main{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 430px;
+            width: 300px;
+            background-color: rgb(0, 145, 255);
+            padding: 20px 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px 3px rgb(129, 200, 255);
+        }
+        .post-close{
+            height: 20px;
+            position: relative;
+            top: -15px;
+            left: 125px;
+            cursor: pointer;
+        }
+        .main-img{
+            height: 350px;
+            width: 300px;
+            position: relative;
+            top: -10px;
+        }
+        .details-action{
+            text-align: justify;
+            font-size: 14px;
+            position: relative;
+            top: -5px;
+        }
+        
+        .status{
+            text-align: justify;
+            display: inline;
+        }
+        .details-action a{
+            padding: 30px 0;
+            font-weight: bold;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            <img src="/close_black.png" alt="" srcset="" class="post-close">
+            <img src="/nature.jpg" alt="" class="main-img">
+            <div class="details-action">
+                <p class="status">Lorem ipsum dolor amet arme mikul cilu swag consectetur adipisicing! ...</p>
+                <a href="#" class="see-more">see more</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
