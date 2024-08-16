@@ -1,66 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Card Example</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: sans-serif;
-        }
-        body {
-            background-color: gray;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        .card {
-            background-color: white;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            overflow: hidden;
-            width: 300px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .card img {
-            width: 100%;
-            height: auto;
-        }
-        .card-body {
-            padding: 15px;
-        }
-        .card-title {
-            font-size: 1.25rem;
-            margin-bottom: 10px;
-        }
-        .card-text {
-            font-size: 1rem;
-            color: #555;
-            margin-bottom: 15px;
-        }
-        .card a {
-            display: inline-block;
-            color: #007bff;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .card a:hover {
-            text-decoration: underline;
-        }
+      :root {
+        --bgColor: #dddddd;
+        --boxShadow1: rgba(244, 244, 244, 0.7);
+        --boxShadow2: rgba(136, 136, 136, 0.7);
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: var(--bgColor);
+      }
+      .card {
+        background-color: var(--bgColor);
+        margin: 20px;
+        border-style: none;
+        border-radius: 10px;
+        overflow: hidden;
+        width: 300px;
+        box-shadow: 0 0 3px 3px var(--bgColor),
+          4px 4px 5px 2px var(--boxShadow2), -4px -4px 5px 3px var(--boxShadow1);
+      }
+      .card img {
+        width: 100%;
+        height: auto;
+      }
+      .card-body {
+        padding: 15px;
+      }
+      .card-title {
+        font-size: 1.25rem;
+        margin-bottom: 10px;
+      }
+      .card-text {
+        font-size: 1rem;
+        color: #555;
+        margin-bottom: 15px;
+      }
+      .card a {
+        display: inline-block;
+        color: #007bff;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      .card a:hover {
+        text-decoration: underline;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="card">
-        <img src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_1280,h_720/https://blog.snappa.com/wp-content/uploads/2019/01/YouTube-Thumbnail-Dimensions.jpg" alt="Card image">
-        <div class="card-body">
-            <h5 class="card-title">Card Title</h5>
-            <p class="card-text">This is a short description of the card content. It can be a few lines long to give an overview.</p>
-            <a href="#">Read More</a>
-        </div>
+      <img
+        src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_1280,h_720/https://blog.snappa.com/wp-content/uploads/2019/01/YouTube-Thumbnail-Dimensions.jpg"
+        alt="Card image"
+      />
+      <div class="card-body">
+        <h5 class="card-title">Card Title</h5>
+        <p class="card-text">
+          This is a short description of the card content. It can be a few lines
+          long to give an overview.
+        </p>
+        <a href="#">Read More</a>
+      </div>
     </div>
-</body>
+  </body>
 </html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>paragraph</title>
+    <style>
+      :root {
+        --bgColor: #dddddd;
+        --boxShadow1: rgba(244, 244, 244, 0.7);
+        --boxShadow2: rgba(136, 136, 136, 0.7);
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: var(--bgColor);
+      }
+      .notes-data {
+        background-color: var(--bgColor);
+        border-radius: 3px;
+        display: flex;
+        box-shadow: 0 0 3px 3px var(--bgColor),
+          4px 4px 5px 2px var(--boxShadow2), -4px -4px 5px 2px var(--boxShadow1);
+        padding: 15px 10px;
+        margin: 0 20px 10px 20px;
+      }
+      .notes-data p {
+        padding: 0 15px 0 0;
+        min-width: 150px;
+        max-width: 100%;
+        word-break: break-all;
+      }
+      .notes-data button {
+        border-style: none;
+        background-color: var(--bgColor);
+        padding: 3px 10px;
+        font-size: 20px;
+        cursor: pointer;
+        box-shadow: 0 0 3px 3px var(--bgColor),
+          1px 1px 1px 1px var(--boxShadow2), -2px -2px 2px 3px var(--boxShadow1);
+        margin: 0 15px;
+        border-radius: 30px;
+      }
+      .notes-data button:active {
+        box-shadow: 0 0 3px 3px var(--bgColor),
+          inset 2px 2px 4px 1px var(--boxShadow2),
+          inset -2px -2px 4px 3px var(--boxShadow1);
+      }
+      .notes-data button:nth-child(2) {
+        color: black;
+        font-weight: bold;
+      }
+      .notes-data button:nth-child(3) {
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="notes-data">
+      <p>paragraph Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
+      <button>✓</button>
+      <button>x</button>
+    </div>
+  </body>
+</html>
